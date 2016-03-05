@@ -13,3 +13,64 @@
  *= require_tree .
  *= require_self
  */
+
+body { 
+	background-color: navy; 
+}
+.appName { 
+	color:  #ffffff;
+}
+.navbar-collapse { 
+	background-color: navy; 
+}
+
+.navbar { 
+	background-color: navy; 
+}
+.contentcontainer {
+	background-color: #ffffff;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.nav-tabs{
+  background-color: navy;
+  border-top-left-radius: 5px; 
+  border-top-right-radius: 5px;
+  margin: 0px; 
+  padding :0px; 
+  border: none;
+}
+
+.nav-tabs > li { 
+	background-color:  #ffffff; 
+   border-top-left-radius: 5px; 
+   border-top-right-radius: 5px;
+	border-top: 1px solid red;
+	border-left: 1px solid red;
+	border-right: 1px solid red;
+	border-bottom: none;
+}
+
+.tab-content{
+    background-color:  #ffffff;
+    color: #ffffff;
+    padding: 5px;
+}
+
+.nav-tabs > li > a { 
+	margin: 0px;
+	color: black;
+	background-color: lightgray;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li > a:hover,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover{
+  background-color: lightblue !important;
+  border-color: lightblue;
+  border-bottom: 1px solid #ffffff;
+  color:  #ffffff;
+}
+
