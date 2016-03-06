@@ -1,1 +1,1 @@
-angular.module("coleadrApp", ['templates', 'ngRoute']);
+angular.module("coleadrApp", ['templates', 'ngRoute', 'ngResource']);

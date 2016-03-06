@@ -12,6 +12,7 @@
 //
 //= require angular
 //= require angular-route
+//= require angular-resource
 //= require_tree ./modules
 //= require_tree ./controllers 
 //= require jquery
@@ -21,5 +22,6 @@
 //
 // Templates in app/assets/javascript/templates
 //= require_tree ./templates
+//= require_tree ./services
 
 
