@@ -1,0 +1,22 @@
+<div ng-controller="memberCtrl">
+	<br>
+	<div style="width: 50%">
+	<form name="newMemberForm">
+		<div class="form-group">
+			<label name="firstName">First Name:</label>
+			<input name="firstName" ng-model="newMember.firstName" class="form-control" placeholder="First Name"> 
+		</div>
+		<div class="form-group">
+			<label name="lastName">Last Name:</label>
+			<input name="lastName" ng-model="newMember.lastName" class="form-control" placeholder="Last Name">
+		</div>
+		<button type="submit" class="btn btn-default btn-sm" ng-click="addNewMember(newMember)">Submit</button> 
+	</form>
+	</div>
+	
+	<p>Members:</p> 
+	<ul ng-repeat="member in members">
+		<li>{{member.firstName}} {{member.lastName}}</li>
+	</ul>
+	 
+</div>

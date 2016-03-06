@@ -1,4 +1,6 @@
 <div ng-controller="memberCtrl">
+<button class="btn btn-default btn-sm" role="button"><a href="#/memberForms/createNewMember">Add New Member</a></button>
+	<br>
 	Members: 
 	<ul ng-repeat="member in members">
 		<li>{{member.firstName}} {{member.lastName}}</li>

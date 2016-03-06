@@ -2,4 +2,8 @@
 	<p>this is the leader dashboard</p>
 	<p>organization ID: {{organization.id}}</p>
 	<p>organization name: {{organization.name}}</p>
+	<p>organization members:</p> 
+	<ul ng-repeat="member in organization.members">
+		<li>{{member.first_name}} {{member.last_name}}</li>
+	</ul>
 </div>
