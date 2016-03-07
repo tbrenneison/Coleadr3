@@ -1,10 +1,9 @@
 var coleadr = angular.module("coleadrApp"); 
 
-coleadr.controller("memberCtrl", function($scope) { 
-	$scope.members = [
-		{"firstName": "Tori", "lastName": "Brenneison"},
-		{"firstName": "Angua", "lastName": "Brenneison"},
-		{"firstName": "Dave", "lastName": "Goerlich"}];
+coleadr.controller("memberCtrl", function($scope, getMembers) { 
+
+	//get with organization ID
+	$scope.members = getMembers.query({id:1}); 
 		
 	$scope.addNewMember = function(newMember) { 
 		$scope.members.push(

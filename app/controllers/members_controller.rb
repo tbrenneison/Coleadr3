@@ -1,7 +1,7 @@
 class MembersController < ApplicationController 
   
   def index 
-    if params[:organization_id] == @organization.id
+    if params[:organization_id].to_i == @organization.id
       render json: @organization.members
     else 
       raise ActiveRecord::RecordNotFound
