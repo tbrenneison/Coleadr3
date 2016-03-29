@@ -6,3 +6,4 @@ coleadr
 	var members = $resource("/organizations/:id/members");
 	return members; 
 	});
+	

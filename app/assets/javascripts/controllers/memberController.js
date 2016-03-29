@@ -18,5 +18,6 @@ coleadr.controller("memberCtrl", function($scope, getMembers, $http) {
 				//if not so success, log exception returned by RoR 
 				console.log("EXCEPTION TO CREATE NEW MEMBER POST REQUEST:" + response); 
 			})
-	};	
+	};
+	
 });
