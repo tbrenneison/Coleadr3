@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root to: "home#homeindex"
   
   resources :organizations, except: [:edit], shallow: true do

@@ -36,6 +36,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # https://github.com/pitr/angular-rails-templates
 gem 'angular-rails-templates' 
 
+gem 'devise'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
