@@ -1,0 +1,30 @@
+<h1>MAKE NEW ORGANIZATION/h1> 
+<%= form_for @account do |f| %>
+
+	<% if @account.errors.any? %>
+	<ul> 
+		<% @account.errors.full_messages.each do |msg| %>
+		<li> <%= msg %> </li> 
+		<% end %> 
+	</ul>
+	<% end %>
+	
+	<%= f.label "Organization Name" %>
+	<%= f.text_field :organization_name, :autofocus => true  %>
+		<!--:autofocus => true ... puts focus on this field when new --> 
+		<br>
+	<%= f.label :first_name %>
+	<%= f.text_field :first_name %>
+			<br>
+	<%= f.label :last_name %>
+	<%= f.text_field :last_name %>
+			<br>
+	<%= f.label :email %>
+	<%= f.email_field :email %>
+			<br>
+	<%= f.label :password %>
+	<%= f.password_field :password %>
+		<br>
+	<%= f.submit %>
+	
+<% end %>
