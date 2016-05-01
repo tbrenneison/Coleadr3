@@ -1,9 +1,46 @@
 <div ng-controller="defaultCtrl">
-	<p>this is the leader dashboard</p>
-	<p>organization ID: {{organization.id}}</p>
-	<p>organization name: {{organization.name}}</p>
-	<p>organization members:</p> 
-	<ul ng-repeat="member in organization.members">
-		<li>{{member.first_name}} {{member.last_name}}</li>
-	</ul>
+	<h1 class="dashboardh1">(Organization) Leadership Dashboard</h1>
+	<div class="dashboardwrap">
+	<div class="dashboardflexwrap">
+		<div class="dashboardcard fullwidth">
+			<h1 class="dashboardcardheader">Reminders</h1>
+			<ul>
+				<li>This is a reminder!</li>
+				<li>This is a second reminder!</li>
+			</ul>
+		</div>
+		
+		<div class="dashboardcard">
+			<h1 class="dashboardcardheader">Projects</h1>
+			<ul>
+				<li>Project One - <i>ending 06/16/16</i></li>
+				<li>Project Two - <i>ending 08/16/16</i></li>
+				<li>Project Three - <i>ending 10/16/16</i></li>
+			</ul>
+		</div>
+		
+		<div class="dashboardcard">
+			<h1 class="dashboardcardheader">Events</h1>
+			<ul>
+				<li>Event One - <i>06/16/16 5:00 PM</i></li>
+				<li>Event Two - <i>08/16/16 10:00 AM - 6:00 PM</i></li>
+				<li>Event Three - <i>10/16/16</i></li>
+			</ul>
+		</div>
+		
+		<div class="dashboardcard">
+			<h1 class="dashboardcardheader">Organization Details</h1>
+			<p>organization ID: {{organization.id}}</p>
+			<p>organization name: {{organization.name}}</p>
+		</div>		
+	</div>
+	<div class="dashboardsidewrap">
+		<div class="dashboardcard fullwidth" style="margin: 10px 0px 0px 0px">
+			<h1 class="dashboardcardheader">Members</h1>
+			<ul ng-repeat="member in organization.members">
+				<li>{{member.first_name}} {{member.last_name}}</li>
+			</ul>
+		</div>
+	</div>
+</div>
 </div>

@@ -15,7 +15,7 @@
  */
 
 body { 
-	background-color: gray; 
+	background-color: navy; 
 }
 .appName { 
 	color:  #ffffff;
@@ -31,6 +31,11 @@ body {
 	background-color: #ffffff;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 25px;
+
 }
 
 .nav-tabs{
@@ -74,3 +79,64 @@ body {
   color:  #ffffff;
 }
 
+/* application classes */ 
+.fullwidth {
+	width: 100%;
+}
+
+.halfwidth {
+	width: 50%; 
+}
+
+.quarterwidth {
+	width: 25%; 
+}
+
+
+/* dashboard classes */ 
+.dashboardwrap { 
+	border: 1px solid hotpink;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: space-between;
+}
+.dashboardflexwrap {
+	width: 75%;
+	padding: 5px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: space-between;
+}
+
+.dashboardsidewrap { 
+	display: inline-block; 
+	float: right;
+	padding: 5px;
+	width: 25%; 
+}
+
+.dashboardcard{
+	display: inline-block;
+	padding: 5px;
+	margin: 10px;
+	border-radius: 5px;
+	border: 2px solid black;
+}
+
+.dashboardcardheader {
+	margin: 0px;
+	padding: 0px;
+	font-size:150%;
+	font-weight: bold;
+}
+
+.dashboardh1 { 
+	font-size: 200%; 
+	font-weight: bold; 
+}
