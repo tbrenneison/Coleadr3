@@ -50,6 +50,7 @@ GEM
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
     byebug (8.2.2)
+    cancancan (1.13.1)
     coderay (1.1.0)
     coffee-rails (4.1.1)
       coffee-script (>= 2.2.0)
@@ -72,6 +73,9 @@ GEM
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     i18n (0.7.0)
+    invitational (1.3.3)
+      cancancan (~> 1.13)
+      rails (~> 4.0)
     jbuilder (2.4.1)
       activesupport (>= 3.0.0, < 5.1)
       multi_json (~> 1.2)
@@ -167,8 +171,10 @@ DEPENDENCIES
   angular-rails-templates
   better_errors
   byebug
+  cancancan
   coffee-rails (~> 4.1.0)
   devise
+  invitational
   jbuilder (~> 2.0)
   jquery-rails
   rails (= 4.2.4)

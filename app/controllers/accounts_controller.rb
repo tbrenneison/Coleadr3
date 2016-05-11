@@ -12,6 +12,7 @@ class AccountsController < ApplicationController
       sign_in(@account.user)
       @organization = Organization.new(name: @account.organization_name)
       @organization.save
+      @organization.invite current_user, :admin
       #redirect_to
       raise Exception.new 
     else 

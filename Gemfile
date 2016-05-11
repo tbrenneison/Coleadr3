@@ -40,6 +40,8 @@ gem 'devise'
 
 gem 'sass'
 
+gem 'invitational'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -54,3 +56,5 @@ group :development do
   gem 'spring'
 end
 
+
+gem 'cancancan'

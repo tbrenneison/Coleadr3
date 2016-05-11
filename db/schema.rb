@@ -11,7 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160418024748) do
+ActiveRecord::Schema.define(version: 20160511012045) do
+
+  create_table "invitations", force: :cascade do |t|
+    t.string   "email"
+    t.string   "role"
+    t.integer  "invitable_id"
+    t.string   "invitable_type"
+    t.integer  "user_id"
+    t.datetime "date_sent"
+    t.datetime "date_accepted"
+    t.string   "claim_hash"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "invitations", ["invitable_id"], name: "index_invitations_on_invitable_id"
+  add_index "invitations", ["invitable_type"], name: "index_invitations_on_invitable_type"
+  add_index "invitations", ["user_id"], name: "index_invitations_on_user_id"
 
   create_table "members", force: :cascade do |t|
     t.string   "first_name"
