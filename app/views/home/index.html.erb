@@ -1,0 +1,19 @@
+<h1>CoLeadr</h1> 
+<hr>
+<% if user_signed_in? %>
+  <li>
+  <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
+  </li>
+<% else %>
+  <li>
+  <%= link_to('Log In Existing User/Organization', new_user_session_path)  %> |
+  <%= link_to "Create Organization", new_account_path %>
+  </li>
+<% end %>
+<hr>
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+
+
+		 
+		

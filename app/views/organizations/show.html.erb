@@ -21,7 +21,16 @@
 							<ul class="nav nav-tabs"> 
 								<li id="org"role="presentation"><a href="#/organization">Organization</a></li>
 								<li id="leader"role="presentation"><a href="#">Leader Details</a></li>
-								<li id="logout"role="presentation"><a href="#">Log Out</a></li>
+								<% if user_signed_in? %>
+								  <li>
+								  <%= link_to('Logout', destroy_user_session_path, :method => :delete) %>        
+								  </li>
+								<% else %>
+								  <li>
+								  <%= link_to('Log In Existing User/Organization', new_user_session_path)  %> |
+								  <%= link_to "Create Organization", new_account_path %>
+								  </li>
+								<% end %>
 							</ul>
 						</div>
 					</ul>
