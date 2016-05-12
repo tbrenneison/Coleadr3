@@ -13,8 +13,8 @@ class AccountsController < ApplicationController
       @organization = Organization.new(name: @account.organization_name)
       @organization.save
       @organization.invite current_user, :admin
-      #redirect_to
-      raise Exception.new 
+      #redirect
+      redirect_to organization_path(@organization)
     else 
       #view
       render :new 

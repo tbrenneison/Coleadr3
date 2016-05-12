@@ -7,14 +7,9 @@ class OrganizationsController < ApplicationController
   
   def show
     organization = Organization.find params[:id]
-    render json: organization
+    #render json: organization
+    
   end 
-  
-  def new 
-    #GET
-    #generates model object that will be passed to the view and posted to create action
-    @organization = Organization.new 
-  end
   
     #POST
     #controller gets nested hash params[:organization] with the attributes set in the form
