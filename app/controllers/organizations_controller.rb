@@ -6,10 +6,16 @@ class OrganizationsController < ApplicationController
   end
   
   def show
-    organization = Organization.find params[:id]
+    @organization = Organization.find params[:id]
     #render json: organization
     
   end 
+  
+  def json
+    @organization = current_user.organizations.first
+    render json: @organization
+  end
+  
   
     #POST
     #controller gets nested hash params[:organization] with the attributes set in the form

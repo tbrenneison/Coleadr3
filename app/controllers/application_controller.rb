@@ -9,13 +9,9 @@ class ApplicationController < ActionController::Base
   #cross site scripting protection (SCRF) - Ruby thinks Angular is mucking with its data maliciously when this is enabled
   #protect_from_forgery with: :exception
   
-  #before_filter :set_organization
-  
-  
-  
-  def set_organization
-    @organization = Organization.find(1)
-    #@organization = current_user.organization
+  def after_sign_in_path_for(user)
+    organization_path(user.organizations.first)
   end
+  
   
 end
