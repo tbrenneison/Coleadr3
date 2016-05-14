@@ -1,34 +1,46 @@
 /*
 SASS-y stylesheet, what what
 */
+
+$body-background-color: #163a77;
+$body-background-backup-color: navy;
+$container-background-color: white; 
+$appname-color : white; 
+$tab-hover-color: lightgray;
+$nav-tab-background-color: #f5e4d0;
+$tab-container-shadow-color: gray; 
+
 body {
-  background-color: navy;
-  background-color: #163a77; }
+  background-color: $body-background-backup-color;
+  background-color: $body-background-color;
+ }
 
 .appName {
-  color: white; }
+  color: $appname-color; }
 
 .navbar-collapse {
-  background-color: navy;
-  background-color: #163a77; }
+  background-color: $body-background-backup-color;
+  background-color: $body-background-color;
+ }
 
 .navbar {
-  background-color: navy;
-  background-color: #163a77; }
+  background-color: $body-background-backup-color;
+  background-color: $body-background-color;
+ }
 
 .contentcontainer {
-  background-color: #f5e4d0;
+  background-color: $nav-tab-background-color;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  border-right: 1px solid gray;
+  border-right: 1px solid $tab-container-shadow-color;
   padding-right: 10px;
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 10px; }
 
 .nav-tabs {
-  background-color: navy;
-  background-color: #163a77;
+  background-color: $body-background-backup-color;
+  background-color: $body-background-color;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   margin: 0px;
@@ -36,29 +48,29 @@ body {
   border: none; }
 
 .nav-tabs > li {
-  background-color: #f5e4d0;
+  background-color: $nav-tab-background-color;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  border-right: 1px solid gray;
+  border-right: 1px solid $tab-container-shadow-color;
   border-bottom: none; }
 
 .tab-content {
-  background-color: #f5e4d0;
+  background-color: $nav-tab-background-color;
   color: #ffffff;
   padding: 5px; }
 
 .nav-tabs > li > a {
   margin: 0px;
   color: black;
-  background-color: #f5e4d0; }
+  background-color: $nav-tab-background-color; }
 
 .nav-tabs > li.active > a,
 .nav-tabs > li > a:hover,
 .nav-tabs > li.active > a:focus,
 .nav-tabs > li.active > a:hover {
-  background-color: lightgray !important;
-  border-color: lightgray;
-  border-bottom: 1px solid #f5e4d0;
+  background-color: $tab-hover-color !important;
+  border-color: $tab-hover-color;
+  border-bottom: 1px solid $nav-tab-background-color;
   color: #ffffff; }
 
 /* application classes */
@@ -73,7 +85,7 @@ body {
 
 /* dashboard classes */
 .dashboardwrap {
-  background-color: white;
+  background-color: $container-background-color;
   border-radius: 5px;
   padding: 5px;
   display: flex;
@@ -115,7 +127,5 @@ body {
 .dashboardh1 {
   font-size: 200%;
   font-weight: bold; }
-
-/*# sourceMappingURL=sassy.css.map */
 
 /*# sourceMappingURL=sassy.css.map */
