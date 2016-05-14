@@ -1,0 +1,105 @@
+$body-background-color: #163a77;
+$body-background-backup-color: navy;
+$appname-color : white; 
+$navbar-text-color: white;
+$navbar-background-color: black;
+$notification-background-color: rgba(54, 25, 25, .5);
+$notification-background-backup-color: black;
+$notification-text-color: white; 
+$calltoaction-text-color: white;
+
+
+body {
+background-color: $body-background-backup-color;
+background-color: $body-background-color;
+}
+
+.appName {
+color: $appname-color;
+display: inline;
+font-size: 300%; 
+}
+
+
+/*flexy*/
+.flexcta { 
+display: flex;
+flex-direction: row;
+flex-wrap: no-wrap;
+justify-content: flex-start;
+align-items: center;
+align-content: space-between; 
+}
+
+.flexitem { 
+display: inline;
+flex-grow: 1;}
+
+/* marketing navbar classes */
+
+.navbar-collapse {
+background-color: $body-background-backup-color;
+background-color: $body-background-color;
+}
+
+.navbar {
+background-color: $body-background-backup-color;
+background-color: $body-background-color;
+}
+
+.navbar.navbar-default.navbar-fixed-top {
+	border: 0px; 
+	margin-bottom: 10px;
+	color: $navbar-text-color; 
+	background-color: $navbar-background-color;
+}
+
+.navbar-collapse.collapse{
+	color: $navbar-text-color; 
+	background-color: $navbar-background-color;
+}
+
+.navbar-collapse.collapsing { 
+	color: $navbar-text-color; 
+	background-color: $navbar-background-color;
+}
+
+.navbar-collapse.collapse in { 
+	color: $navbar-text-color; 
+	background-color: $navbar-background-color;
+}
+
+/* notification class */ 
+.notice, .alert {
+	display: inline-block;
+	float: center;
+	text-align: center;
+	margin: 0px;
+	padding: 0px; 
+	color: $notification-text-color;
+	background-color: $notification-background-backup-color; 
+	background-color: $notification-background-color;
+}
+
+/*CtA cssessesssssss*/ 
+
+h2 { 
+	display: inline-block; 
+	font-size: 250%; 
+	color: $calltoaction-text-color; 
+	margin: 0px;
+	padding: 5px;
+}
+
+h3 { 
+	display: inline-block; 
+	font-size: 200%; 
+	color: $calltoaction-text-color; 
+	margin: 0px;
+	padding: 5px;
+}
+
+.aligncenter { 
+	text-align: center;
+	align: center;
+}

@@ -1,18 +1,11 @@
-<div id="userauth">
-	<% if user_signed_in? %>
-	  <li>
-  		<%= link_to('Log Out', destroy_user_session_path, :method => :delete) %>        
-  		</li>
-	<% else %>
-  		<li>
-  	 	  <%= link_to("Log In", new_user_session_path)  %> |
-  		  <%= link_to "Sign Up", new_account_path %>
-  		</li>
-	<% end %>
-</div>
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
-
-
-		 
-		
+<div class="row aligncenter flexcta">
+	<div class="col-md-1 flexitem">&nbsp;</div>
+	<div class="col-md-6 flexitem">
+	<h2>Managing a small group?</h2>
+	<br>
+	<h3>You're going to need a CoLeadr.</h3>
+	</div>
+	<div class="col-md-2 flexcta">
+		<button class="btn btn-default btn-block flexitem">Start Now</button>
+	</div>
+	<div class="col-md-3 flexitem">&nbsp;</div>

@@ -1,0 +1,80 @@
+body {
+  background-color: navy;
+  background-color: #163a77; }
+
+.appName {
+  color: white;
+  display: inline;
+  font-size: 300%; }
+
+/*flexy*/
+.flexcta {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: space-between; }
+
+.flexitem {
+  display: inline;
+  flex-grow: 1; }
+
+/* marketing navbar classes */
+.navbar-collapse {
+  background-color: navy;
+  background-color: #163a77; }
+
+.navbar {
+  background-color: navy;
+  background-color: #163a77; }
+
+.navbar.navbar-default.navbar-fixed-top {
+  border: 0px;
+  margin-bottom: 10px;
+  color: white;
+  background-color: black; }
+
+.navbar-collapse.collapse {
+  color: white;
+  background-color: black; }
+
+.navbar-collapse.collapsing {
+  color: white;
+  background-color: black; }
+
+.navbar-collapse.collapse in {
+  color: white;
+  background-color: black; }
+
+/* notification class */
+.notice, .alert {
+  display: inline-block;
+  float: center;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  background-color: black;
+  background-color: rgba(54, 25, 25, 0.5); }
+
+/*CtA cssessesssssss*/
+h2 {
+  display: inline-block;
+  font-size: 250%;
+  color: white;
+  margin: 0px;
+  padding: 5px; }
+
+h3 {
+  display: inline-block;
+  font-size: 200%;
+  color: white;
+  margin: 0px;
+  padding: 5px; }
+
+.aligncenter {
+  text-align: center;
+  align: center; }
+
+/*# sourceMappingURL=marketing.css.map */

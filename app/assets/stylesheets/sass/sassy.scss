@@ -16,7 +16,10 @@ body {
  }
 
 .appName {
-  color: $appname-color; }
+  color: $appname-color;
+  display: inline-block;
+	font-size: 300%; 
+}
 
 .navbar-collapse {
   background-color: $body-background-backup-color;
@@ -128,4 +131,19 @@ body {
   font-size: 200%;
   font-weight: bold; }
 
+  /* navbar classes */
+  
+    .flexnavwrap { 
+  	  display: flex;
+  	  flex-direction: row;
+  	  flex-wrap: no-wrap;
+  	  justify-content: flex-start;
+  	  align-items: center;
+  	  align-content: space-between; 
+    }
+  
+    .flexnavchild { 
+  	  display: inline;}
+  
+  
 /*# sourceMappingURL=sassy.css.map */

@@ -6,7 +6,9 @@ body {
   background-color: #163a77; }
 
 .appName {
-  color: white; }
+  color: white;
+  display: inline-block;
+  font-size: 300%; }
 
 .navbar-collapse {
   background-color: navy;
@@ -115,6 +117,18 @@ body {
 .dashboardh1 {
   font-size: 200%;
   font-weight: bold; }
+
+/* navbar classes */
+.flexnavwrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: space-between; }
+
+.flexnavchild {
+  display: inline; }
 
 /*# sourceMappingURL=sassy.css.map */
 
