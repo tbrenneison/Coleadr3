@@ -1,6 +1,6 @@
 class OrganizationsController < ApplicationController 
   
-  layout 'application'
+  layout 'angularwrap'
   
   def index 
     organizations = Organization.all.order(:name)
