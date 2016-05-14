@@ -1,5 +1,7 @@
 class OrganizationsController < ApplicationController 
   
+  layout 'application'
+  
   def index 
     organizations = Organization.all.order(:name)
     render json: organizations
