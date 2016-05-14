@@ -1,20 +1,20 @@
 /*
-SASS-y 
- */
+SASS-y stylesheet, what what
+*/
 body {
-  background-color: navy; }
+  background-color: green; }
 
 .appName {
-  color: #ffffff; }
+  color: white; }
 
 .navbar-collapse {
   background-color: navy; }
 
 .navbar {
-  background-color: navy; }
+  background-color: green; }
 
 .contentcontainer {
-  background-color: #ffffff;
+  background-color: white;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   padding-right: 10px;
@@ -23,7 +23,7 @@ body {
   padding-bottom: 25px; }
 
 .nav-tabs {
-  background-color: navy;
+  background-color: green;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   margin: 0px;
@@ -31,7 +31,7 @@ body {
   border: none; }
 
 .nav-tabs > li {
-  background-color: #ffffff;
+  background-color: white;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border-top: 1px solid red;
@@ -40,14 +40,14 @@ body {
   border-bottom: none; }
 
 .tab-content {
-  background-color: #ffffff;
+  background-color: white;
   color: #ffffff;
   padding: 5px; }
 
 .nav-tabs > li > a {
   margin: 0px;
   color: black;
-  background-color: lightgray; }
+  background-color: white; }
 
 .nav-tabs > li.active > a,
 .nav-tabs > li > a:hover,
@@ -55,7 +55,7 @@ body {
 .nav-tabs > li.active > a:hover {
   background-color: lightblue !important;
   border-color: lightblue;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid white;
   color: #ffffff; }
 
 /* application classes */
