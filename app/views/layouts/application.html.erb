@@ -5,6 +5,7 @@
 
 
 <%= stylesheet_link_tag 'bootstrap' %>
+<%= stylesheet_link_tag 'font-awesome-4.6.3/css/font-awesome' %>
 <%= stylesheet_link_tag 'marketing' %>
 <%= javascript_include_tag 'jquery' %>
 <%= javascript_include_tag 'bootstrap' %>
@@ -15,33 +16,33 @@
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-md-3">
+					<div class="col-md-3 col-sm-3 col-xs-11">
 						<div class="navbar-header">
 						<h1 class="appName">CoLeadr</h1>
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-				</div><!--navbar-header-->
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div><!--navbar-header-->
 					</div><!--col-md-3-->
-					<div class="col-md-9 flexnavwrap">
+					<div class="col-md-9 col-sm-9 col-xs-1">
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav">
-								<li><a href="#">About</a></li>
+								<li><a href="about">About</a></li>
 								<li><a href="#">Contact</a></li>
 								<li><a href="#">Features</a></li>
-								<li><a href="#">Home</a></li>
+								<li><a href="index">Home</a></li>
 							<% if user_signed_in? %>
-							  <li>
+							  <li style="float:right;">
 						  		<%= link_to('Log Out', destroy_user_session_path, :method => :delete) %>        
 						  		</li>
 							<% else %>
-						  		<li>
+						  		<li style="float:right;">
 						  	 	  <%= link_to("Log In", new_user_session_path)  %>
 							  	</li>
-							  	<li>
+							  	<li style="float:right;">
 						  		  <%= link_to "Sign Up", new_account_path %>
 						  		</li>
 							<% end %>

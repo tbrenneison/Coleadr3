@@ -1,11 +1,19 @@
 body {
   background-color: navy;
-  background-color: #163a77; }
+  background-color: #163a77;
+  color: white; }
 
 .appName {
   color: white;
   display: inline;
   font-size: 300%; }
+
+.faiconcolor {
+  color: white; }
+
+/*carousel*/
+.item {
+  height: 400px; }
 
 /*flexy*/
 .flexcta {
@@ -43,7 +51,7 @@ body {
   color: white;
   background-color: black; }
 
-.navbar-collapse.collapse in {
+.navbar-collapse.collapse.in {
   color: white;
   background-color: black; }
 
@@ -73,8 +81,24 @@ h3 {
   margin: 0px;
   padding: 5px; }
 
+h4 {
+  display: inline-block;
+  font-size: 150%;
+  color: white;
+  margin: 0px;
+  padding: 5px; }
+
 .aligncenter {
   text-align: center;
   align: center; }
+
+/*index page goodies*/
+.indexpagecardparagraph {
+  padding: 5px; }
+
+/*media queries*/
+@media (min-width: 768px) {
+  .navbar-header {
+    float: none; } }
 
 /*# sourceMappingURL=marketing.css.map */

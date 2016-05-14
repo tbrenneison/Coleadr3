@@ -7,11 +7,13 @@ $notification-background-color: rgba(54, 25, 25, .5);
 $notification-background-backup-color: black;
 $notification-text-color: white; 
 $calltoaction-text-color: white;
-
+$faicon-color: white;
+$default-text-color: white;
 
 body {
 background-color: $body-background-backup-color;
 background-color: $body-background-color;
+color: $default-text-color;
 }
 
 .appName {
@@ -20,6 +22,14 @@ display: inline;
 font-size: 300%; 
 }
 
+.faiconcolor { 
+	color: $faicon-color;
+}
+
+/*carousel*/
+.item { 
+	height: 400px; 
+}
 
 /*flexy*/
 .flexcta { 
@@ -64,7 +74,7 @@ background-color: $body-background-color;
 	background-color: $navbar-background-color;
 }
 
-.navbar-collapse.collapse in { 
+.navbar-collapse.collapse.in { 
 	color: $navbar-text-color; 
 	background-color: $navbar-background-color;
 }
@@ -99,7 +109,28 @@ h3 {
 	padding: 5px;
 }
 
+h4 { 
+	display: inline-block; 
+	font-size: 150%; 
+	color: $calltoaction-text-color; 
+	margin: 0px;
+	padding: 5px;
+}
+
 .aligncenter { 
 	text-align: center;
 	align: center;
+}
+
+/*index page goodies*/
+
+.indexpagecardparagraph { 
+	padding: 5px; 
+}
+
+/*media queries*/
+@media (min-width: 768px) {
+  .navbar-header {
+    float: none;
+  }
 }
