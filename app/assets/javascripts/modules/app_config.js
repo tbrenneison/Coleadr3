@@ -11,6 +11,10 @@ coleadr.config(["$routeProvider",
         templateUrl: "grouplist.html",
         controller: "groupCtrl"
     	}).
+      when("/members/new", {
+        templateUrl: "membertemplates/newmember.html",
+        controller: "membersCtrl"
+    	}).
       when("/organization", {
         templateUrl: "organization.html",
         controller: "defaultCtrl"

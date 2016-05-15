@@ -3,6 +3,7 @@ var coleadr = angular.module("coleadrApp");
 coleadr.factory("getOrganization", function($http) { 
 	//get the current organization
 	var organization = {name:"", id:"", created_at:"", last_update:""}; 
+	//..organizations/json returns JSON for current organization
 	$http.get("../organizations/json")
     .then(function(response) {
 		 console.log(response.data);

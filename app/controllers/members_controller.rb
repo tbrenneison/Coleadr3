@@ -16,6 +16,7 @@ class MembersController < ApplicationController
   def create
     member = Member.new(member_request_params)
     member.organization = @organization
+    
     if member.save
       render json: member
     else
