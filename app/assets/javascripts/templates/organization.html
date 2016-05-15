@@ -1,4 +1,10 @@
 <div ng-controller="defaultCtrl">
+	<h1 class="titleh1">Organization Details:</h1>
 	Organization ID: {{organization.id}}
+	<br>
 	Organization name: {{organization.name}}
+	<br>
+	Created at: {{organization.created_at | date:"MM/dd/yyyy 'at' h:mm a"}}
+	<br>
+	Last update: {{organization.last_update | date:"MM/dd/yyyy 'at' h:mm a"}}
 </div>

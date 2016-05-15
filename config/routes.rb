@@ -2,9 +2,6 @@ Rails.application.routes.draw do
   devise_for :users
   root to: "home#index"
   
-  get "/:page" => "home#show"
-
-  
   resources :accounts, only: [:new, :create]
   
   resources :organizations, except: [:edit], shallow: true do

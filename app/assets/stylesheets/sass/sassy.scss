@@ -21,6 +21,13 @@ body {
 	font-size: 300%; 
 }
 
+.titleh1 {
+  font-size: 200%;
+  font-weight: bold;
+	margin-top: 10px; }
+	
+	/*navigation classes */ 
+	
 .navbar-collapse {
   background-color: $body-background-backup-color;
   background-color: $body-background-color;
@@ -90,7 +97,6 @@ body {
 .dashboardwrap {
   background-color: $container-background-color;
   border-radius: 5px;
-  padding: 5px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -129,7 +135,8 @@ body {
 
 .dashboardh1 {
   font-size: 200%;
-  font-weight: bold; }
+  font-weight: bold;
+	margin-top: 10px; }
 
   /* navbar classes */
   
@@ -145,5 +152,11 @@ body {
     .flexnavchild { 
   	  display: inline;}
   
+	  /* faux-dashboard */ 
+	  .viewwrapper {
+	    background-color: $container-background-color;
+	    border-radius: 5px;
+	    padding: 10px;
+}
   
 /*# sourceMappingURL=sassy.css.map */
