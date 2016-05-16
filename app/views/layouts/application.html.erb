@@ -30,10 +30,10 @@
 					<div class="col-md-9 col-sm-9 col-xs-1">
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav">
-								<li><a href="#">About</a></li>
+								<li><%= link_to('About', about_page_path) %></li>
 								<li><a href="#">Contact</a></li>
 								<li><a href="#">Features</a></li>
-								<li><a href="index">Home</a></li>
+								<li><%= link_to('Home', root_path) %></li>
 							<% if user_signed_in? %>
 							  <li style="float:right;">
 						  		<%= link_to('Log Out', destroy_user_session_path, :method => :delete) %>        

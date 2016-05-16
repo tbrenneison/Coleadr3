@@ -11,4 +11,8 @@ Rails.application.routes.draw do
     resources :members, except: [:new,:edit]
   end
   
+  PagesController.action_methods.each do |action|
+    get "/#{action}", to: "pages##{action}", as: "#{action}_page"
+  end
+  
 end
