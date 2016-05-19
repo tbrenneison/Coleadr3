@@ -11,6 +11,9 @@ body {
 .faiconcolor {
   color: white; }
 
+.contrasttext {
+  color: white; }
+
 /*carousel*/
 .item {
   height: 400px; }

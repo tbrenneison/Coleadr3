@@ -39,6 +39,23 @@ class MembersController < ApplicationController
   
 
 private 
+
+  def set_context
+    if params[:id]
+      @member = Member.find(params[:id])
+      @organization = @member.organization
+    elsif params[:organization_id]
+      @organization = Organization.find(params[:organization_id])
+    end
+  end
+  
+  def check_permissions!
+    #raises exception if attempt to access organization not invited to
+    if @organization
+      authorize! :manage, @organization
+    end
+  end
+
   def member_request_params
     #security measure - these are the only parameters that will be accepted 
     #hands back a filtered hash of values to be handed back in to the action 

@@ -1,10 +1,8 @@
 var coleadr = angular.module("coleadrApp"); 
 
-coleadr.controller("membersCtrl", function($scope, $http) { 
+coleadr.controller("membersCtrl", function($scope, $http, dataService, getMembers) { 
 	
-	$scope.members = {};
-	
-	$scope.newMember;
+	$scope.members = getMembers.getthem(dataService.organization.id);
 	
 	$scope.createNewMember = function(newMember) { 
 		$http.post("../organizations/" + $scope.organization.id + "/members/", JSON.stringify(newMember))
@@ -13,7 +11,7 @@ coleadr.controller("membersCtrl", function($scope, $http) {
 			console.log(response.data); 
 		}), 
 		(function(response){
-			//problem
+			//there is problem, what do oh noes
 		});
 	}
 		

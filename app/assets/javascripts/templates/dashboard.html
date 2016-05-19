@@ -35,10 +35,10 @@
 		</div>		
 	</div>
 	<div class="dashboardsidewrap">
-		<div class="dashboardcard fullwidth" style="margin: 10px 0px 0px 0px">
+		<div class="dashboardcard fullwidth" ng-controller="membersCtrl" style="margin: 10px 0px 0px 0px">
 			<h1 class="dashboardcardheader">Members</h1>
 			<a href="#/members/new">New Member</a>
-			<ul ng-repeat="member in organization.members">
+			<ul ng-repeat="member in members">
 				<li>{{member.first_name}} {{member.last_name}}</li>
 			</ul>
 		</div>
