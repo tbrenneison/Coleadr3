@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   devise_for :users
   root to: "home#index"
   
+  get 'json', to: 'home#json'
+  
   resources :accounts, only: [:new, :create]
   
   resources :organizations, except: [:edit], shallow: true do

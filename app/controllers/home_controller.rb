@@ -4,4 +4,10 @@ class HomeController < ApplicationController
   def show
   end
     
+  def json
+    @organization = current_user.organizations.first
+    json = { :organization => @organization, :members => @organization.members.all }
+    render json: json
+  end
+
 end
