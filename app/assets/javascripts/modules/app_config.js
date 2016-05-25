@@ -19,6 +19,10 @@ coleadr.config(["$routeProvider",
         templateUrl: "organization.html",
         controller: "defaultCtrl"
     	}).
+      when("/members", {
+        templateUrl: "membertemplates/memberlist.html",
+        controller: "membersCtrl"
+    	}).
       otherwise({
         redirectTo: "/dashboard"
       });
